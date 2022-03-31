@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		.span2 {
+				font-size: 25px;
+				color: #8B4513;
+				position: relative;
+				top: -20px;
+				left: 10px;
+				background-color: #FAEBD7;
+			}
+			.span12{
+				font-size: 25px;
+				color:black ;
+				position: relative;
+				outline-color: red;
+				border: 1px gainsboro solid;
+				background-color: #FAEBD7;
+				margin-left: 100px;
+			}
+			.sosuo {
+				height: 30px;
+				width: 200px;
+				border-radius: 20px;
+				padding-left: 10px;
+				position: relative;
+				top: -20px;
+				left: 6px;
+				border: 1px burlywood solid;
+				background-color: #FAEBD7;
+			}
+			
+			.bigboxge4 {
+				width: 960px;
+				border: 1px bisque solid;
+				float: left;
+			}
+			
+		.bl1{
+			width: 960px;
+				border: 1px bisque solid;
+				float: left;
+		}
+		.imga{
+			width: 400px;
+			border: 1px bisque solid;
+				float: left;
+		}
+	    .jiab{
+			width: 550px;
+			border: 1px bisque solid;
+			float: left;
+		}
+		.zi{
+			width: 550px;
+			border: 1px bisque solid;
+			float: left;
+		}
+		.jiage{
+			width: 550px;
+			height: 30px;
+			border: 1px bisque solid;
+			float: left;
+			background-color: aliceblue;
+			
+		}
+		.button1{
+				font-size: 25px;
+				color:black ;
+				position: relative;
+				outline-color: red;
+				border: 1px gainsboro solid;
+				background-color: #FAEBD7;
+				margin-left: 20px;
+			}
+		#number{
+			border: 1px bisque solid;
+			outline: none;
+			background-color: white;
+			outline-color: red;
+			width: 50px;
+			height: 40px;
+		}
+		.pinglun{
+			border: 1px red solid;
+			width: 960px;
+			float: left;
+		}
+	</style>
+	<body>
+		<div class="bigboxge4">
+			<div class="div1">
+				<a href="index10.html"><img src="img/字体一.png" width="200px"></a>
+				<a href="index10.html"><img src="img/屋1.png" width="100px" /></a>
+				<input type="text" class="sosuo" /> <button class="span2">搜索</button>
+			</div>
+			<div class="bl1">
+				<div class="imga">
+					<img src="img/茅草屋.jpg" width="100%"/>
+				</div>
+				<div class="jiab">
+				<div class="zi">
+					<p>茅草屋diy立体拼图玩具竹制拼装古建筑模型成人高难度</p>
+				</div>	
+			     <div class="jiage">
+			     	<p style="color: red; margin-top: 0px;">价格：100元</h1>
+			     </div>
+			     <div class="zi">
+					<p>运费：包邮</p>
+				</div>	
+				<div class="zi">
+					<span>尺寸                          </span>
+					<button class="button1" onclick="z1i()" id="z1i">超大号</button>
+					<button class="button1" onclick="z2i()" >大号</button>
+					<button class="button1" onclick="z3i()">小号</button>
+				</div>	
+				<div class="zi">
+					<span>数量</span>
+					<input type="number" name="number" id="number" value="" />
+				</div>
+				<div class="zi">
+					<button class="span12">立即购买</button>
+				</div>
+				<div class="zi">
+					<p>服务承诺 正品保证 极速退款 七天无理由退换 
+                    </p>
+					
+				</div>
+				
+				</div>
+				<div class="pinglun">
+					用户名:<input id="name" type="text" />
+	                                          评论:<input id="pu" type="text" />
+	    <td><input type="radio" name="sex"  value="-1分" id="man">-1分<input type="radio" name="sex" value="1分" id="woman" checked="checked">1分</radio>
+	    	<input type="radio" name="sex" value="0分" id="fen">0分</radio>
+				</td>
+	        <button onclick="createTr()">操作</button>
+					<table id="oTa">
+			<tbody id="oTb">
+				<tr id="tr1">
+			    
+				<td class="td1">评论</td>
+				</tr>
+			<tr>
+				<td>1</td>
+				<td id="xm1">张房</td>
+				<td>模型很好看</td>
+				</tr>
+			<tr>
+				<td>2</td>
+				<td id="xm2">李四</td>
+				<td>不错</td>
+				
+			</tr>
+			<tr>
+				<td>3</td>
+				<td id="xm3">赵武</td>
+				<td>还可以</td>
+				
+			</tr>
+			
+			</tbody>
+			
+		</table>
+				</div>
+			</div>
+		</div>
+		<script>
+			
+			document.getElementById("xm3").onmouseover=function(){
+		    document.getElementById("xm3").style.color="red";
+			}
+			document.getElementById("xm3").onmouseout=function(){
+		    document.getElementById("xm3").style.color="black";
+			}	
+			document.getElementById("sc3").onclick=function(){
+				this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+			}
+			document.getElementById("xm2").onmouseover=function(){
+		    document.getElementById("xm2").style.color="red";
+			}
+			document.getElementById("xm2").onmouseout=function(){
+		    document.getElementById("xm2").style.color="black";
+			}	
+			document.getElementById("sc2").onclick=function(){
+				this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+			}
+			document.getElementById("xm1").onmouseover=function(){
+		    document.getElementById("xm1").style.color="red";
+			}
+			document.getElementById("xm1").onmouseout=function(){
+		    document.getElementById("xm1").style.color="black";
+			}	
+			document.getElementById("sc1").onclick=function(){
+				this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+			}
+			
+		</script>
+		<script>
+			     var id = document.getElementById("oTa").tBodies[0].rows.length;
+			function createTr(){
+				var tab =document.getElementById("oTb");
+				var  otable=document.getElementById("oTa");
+				var oname=document.getElementById("name");
+				var opu=document.getElementById("pu");
+				var osex2=document.getElementById("woman");
+				var osex1=document.getElementById("man");
+				var osex3=document.getElementById("fen");
+				var osex=document.getElementsByName("sex")
+				var oTr=document.createElement("tr");
+			
+				var oTd1=document.createElement("td");
+				    oTd1.innerHTML=id++;
+				    oTr.appendChild(oTd1);
+				    
+				var oTd2=document.createElement("td");
+				    oTd2.innerHTML=oname.value;
+				    oTr.appendChild(oTd2);
+				    oTd2.onmouseover=function(){
+		             oTd2.style.color="red";
+		             oTd2.onmouseout=function(){
+		             oTd2.style.color="black";
+			}	
+			}
+				    var oTd3=document.createElement("td");
+				    oTd3.innerHTML=opu.value;
+				    oTr.appendChild(oTd3);
+				var oTd4=document.createElement("td");
+				      
+					if(osex[0].checked==true)
+				      oTd4.innerHTML=osex1.value;
+				    if(osex[1].checked==true)
+				      oTd4.innerHTML=osex2.value;
+				      if(osex[2].checked==true)
+				      oTd4.innerHTML=osex3.value;   
+				    oTr.appendChild(oTd4);
+			    var oTd5=document.createElement("td");
+				var  oa=document.createElement("a");
+			    var ob=document.createTextNode("删除");
+				    oa.setAttribute("href","javascript:void(0)");
+				    oa.appendChild(ob);
+				    oTd5.appendChild(oa);
+				    oTr.appendChild(oTd5);
+			     oa.onclick=function(){
+				this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+			}
+				 document.getElementById("oTb").appendChild(oTr); 
+			}
+			
+		</script>
+	</body>
+</html>

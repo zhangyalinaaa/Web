@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				width: 960px;
+				margin: 0 auto;
+			}
+			
+			.bigbox {
+				content: "";
+				display: block;
+				clear: both;
+				background-color: white;
+				margin: 5px;
+				float: left;
+			}
+			
+			.box0 {
+				clear: both;
+			}
+			
+			.longbox1 {
+				width: 960px;
+				height: 100px;
+				background-color: white;
+				float: left;
+			}
+			
+			.longbox2 {
+				width: 960px;
+				height: 50px;
+				background-color: white;
+				overflow: hidden;
+				margin-top: 10px;
+				float: left;
+			}
+			
+			.longbox3 {
+				width: 960px;
+				height: 100px;
+				background-color: white;
+				overflow: hidden;
+				margin-top: 10px;
+				float: left;
+			}
+			
+			.longbox3a {
+				width: 600px;
+				height:90px;
+				background-color: white;
+				float: left;
+			}
+			
+			.longbox3b {
+				width: 300px;
+				height:90px;
+				background-color: white;
+				margin-left: 60px;
+				float: left;
+			}
+			
+			.bigbox2 {
+				width: 960px;
+			}
+			
+			.y1box {
+				width: 310px;
+				margin-right: 15px;
+				background-color: white;
+				height: 380px;
+				float: left;
+			}
+			.y1abox {
+				width: 300px;
+				height: 30px;
+				margin: 5px;
+				
+				border-color:white;
+				border-style: solid;
+				
+			
+				float: left;
+			}
+			.y1bbox{
+				width: 300px;
+				height: 30px;
+				margin: 5px;
+				
+				border-color:white;
+				border-style: solid;
+				
+			
+				float: left;
+			}
+			.y1bcox{
+				width: 300px;
+				height: 20px;
+				margin: 5px;
+				border-color:white;
+				border-style: solid;
+		        float: left;
+			}
+			
+			.y2box {
+				width: 310px;
+				margin-right: 15px;
+				background-color: white;
+				height: 350px;
+				float: left;
+			}
+			
+			.y3box {
+				width: 310px;
+				height: 350px;
+				background-color: white;
+				float: left;
+			}
+			.y3abox{
+				width: 300px;
+				height: 30px;
+				border-color:#cae0f3 ;
+				border-style: solid;
+				border-width: 1px;
+				margin-left: 7px;
+				float: left;
+				
+			}
+			.y3bbox{
+				width: 300px;
+				height: 30px;
+				border-color:#cae0f3 ;
+				border-style: solid;
+				border-width: 1px;
+				margin-left: 7px;
+				float: left;
+				background-color: #f5f8fc;
+				
+			}
+			ul.b3{
+				display: inline;
+				background-color: white;
+			}
+			.b3 li a{
+				font-size: 10px;
+				color: #000000;
+				margin: 2px;
+			}
+			ul.b4{
+				display: inline;
+				background-color:#f5f8fc ;
+			}
+			.b4 li a{
+				font-size: 10px;
+				color: #000000;
+				margin: 1px;
+			}
+			ul.b5{
+				display: inline;
+				background-color: white;
+			}
+			.b5 li a{
+				font-size: 10px;
+				color: #000000;
+				margin: 1px;
+			}
+			.b6 li a{
+				font-size: 11px;
+				line-height: 37px;
+				margin-left: 1px;
+				color: white;
+				padding-left: 4px;
+				
+			}
+			ul.b6{border-radius: 12px;
+				background-color: #b5ccec;
+				display: inline;
+				margin-top: 10px;}
+				.y3cbox{
+					width: 300px;
+					height: 30px;
+					border-color: blue;
+                    border-style: solid;
+                    border-width: 1px;
+                    margin-left: 7px;
+                     float: left;
+ 				}
+ 				.y3dbox{
+					width: 300px;
+					height: 200px;
+					border-color: blue;
+                    border-style: solid;
+                    border-width: 1px;
+                    margin-left: 7px;
+                     float: left;
+ 				}
+			a.qqkj:link {
+				display: block;
+				width: 24 px;
+				height: 26px;
+				background: url(img/icons.png);
+				background-position: 0px -99px;
+				background-repeat: none;
+			}
+			
+			a.qqkj:hover {
+				display: block;
+				width: 24px;
+				height: 26px;
+				background-image: url(img/icons.png);
+				background-position: 0px -150px;
+				background-repeat: none;
+			}
+			
+			a.xx:link {
+				display: block;
+				width: 24 px;
+				height: 26px;
+				background: url(img/icons.png);
+				background-position: 0px -194px;
+				background-repeat: none;
+			}
+			
+			a.xx:hover {
+				display: block;
+				width: 24px;
+				height: 26px;
+				background-image: url(img/icons.png);
+				background-position: 0px -244px;
+				background-repeat: none;
+			}
+			a.wy:link {
+				display: block;
+				width: 13 px;
+				height: 8px;
+				background: url(img/icons.png);
+				background-position: -17px -931px;
+				background-repeat: none;
+				
+			}
+			
+			a.wy:hover {
+				display: block;
+				width: 13px;
+				height: 8px;
+				background-image: url(img/icons.png);
+				background-position: -17px -931px;
+				background-repeat: none;
+				position: relative;
+			}
+			.wyd {width: 13px;height: 8px;float: left;z-index: 9;float:left; position:relative;left:25px;top: 15px;  background-color:lightgray;}
+			.qq {
+				width: 24px;
+				height: 26px;
+				float: left;
+				margin: 30px 5px;
+			}
+			 a.sj:link {
+				display: block;
+				width: 13 px;
+				height: 22px;
+				background: url(img/icons.png);
+				background-position: -19px -300px;
+				background-repeat: none;
+				margin-left: 270px;
+				margin-top: -14px;
+			}
+			
+			a.sj:hover {
+				display: block;
+				width: 13px;
+				height: 22px;
+				background-image: url(img/icons.png);
+				background-position: -19px -300px;
+				background-repeat: none;
+				margin-left: 270px;
+				margin-top: -14px;
+				color: white;
+			}
+			li a.sj:hover:not(.active){background-color:white}
+			li a.xing:link {
+				display: block;
+				width: 15 px;
+				height: 22px;
+				background: url(img/icons.png);
+				background-position: -18px -348px;
+				background-repeat: none;
+				margin-left: 270px;
+				margin-top: -14px;
+			}
+			
+			li a.xing:hover {
+				display: block;
+				width: 15px;
+				height: 22px;
+				background-image: url(img/icons.png);
+				background-position: -18px -348px;
+				background-repeat: none;
+				margin-left: 270px;
+				margin-top: -14px;
+				color: white;
+			}
+			li a.xing:hover:not(.active){background-color: #f5f8fc}
+			
+			li a.youxi:link {
+				display: block;
+				width: 15 px;
+				height: 22px;
+				background: url(img/icons.png);
+				background-position: -16px -396px;
+				background-repeat: none;
+				margin-left: 270px;
+				margin-top: -14px;
+			}
+			
+			li a.youxi:hover {
+				display: block;
+				width: 15px;
+				height: 22px;
+				background-image: url(img/icons.png);
+				background-position: -16px -396px;
+				background-repeat: none;
+				margin-left: 270px;
+				margin-top: -14px;
+				color: white;
+			}
+			li a.youxi:hover:not(.active){background-color:white}
+			
+			li a.cabei:link {
+				display: block;
+				width: 15 px;
+				height: 22px;
+				background: url(img/icons.png);
+				background-position: -17px -447px;
+				background-repeat: none;
+				margin-left: 270px;
+				margin-top: -14px;
+			}
+			
+			li a.cabei:hover {
+				display: block;
+				width: 15px;
+				height: 22px;
+				background-image: url(img/icons.png);
+				background-position: -17px -447px;
+				background-repeat: none;
+				margin-left: 270px;
+				margin-top: -14px;
+				color: white;
+			}
+			li a.cabei:hover:not(.active){background-color: #f5f8fc}
+			button.bn {
+				background-color: #f5f5f5;
+				margin: 30px;
+				color: #60a5e4;
+				font-size: 14px;
+				border-color: #cae0f3;
+				border-style: solid;
+				width: 40px;
+				height: 25px;
+			}
+			
+			ul {
+				list-style: none;
+				margin: 10px;
+				padding: 0;
+				display: inline-block;
+				background-color: #1479d7;
+				height: 50px;
+			}
+			
+			li {
+				display: inline;
+				overflow: hidden;
+			}
+			
+			li a {
+				text-decoration: none;
+				margin: 10px;
+				color: white;
+				font-size: 25px;
+			}
+			li a:hover:not(.active){background-color:lightskyblue}
+			.dropdown li a{
+				font-size: 25px;
+				color: #000000;
+			}
+			
+			
+			.dropdown:hover ul {
+				position: absolute;
+				display: block;
+				background-color: white;
+				margin-left:-100px;
+				bottom: 240px;
+				left: 200px;
+				z-index: 16;
+				padding: 9px 15px 10px 15px;
+			}
+			ul ul{display: none;}
+			
+		    
+			.dropdownwy:hover ul {
+				position: absolute;
+				display: block;
+				background-color: white;
+				margin-left: 300px;
+				bottom: 260px;
+				left: 1px;
+			    z-index: 9;
+			    }
+			.dropdownwy li a{
+				font-size: 25px;
+				color: #000000;
+			}
+			.serachboder {
+				border: 1px solid gainsboro;
+				-moz-border-radius: 20px;
+				-ms-border-radius: 20px;
+				-o-border-radius: 20px;
+				border-radius: 20px;
+				width: 400px;
+				height: 40px;
+				background-color: lightgray;
+				float: left;
+				margin: 20px 140px;
+			}
+			
+			.lb21 {
+				float: left;
+				width: 100px;
+				height: 100px background-color: palegreen;
+			}
+			
+			.lb22 {
+				float: left;
+			}
+			.search1{
+				position: relative;
+				top: 8px;
+				left: 20px;
+				float: left;
+			}
+			.search2{
+				position: relative;
+				top: 8px;
+				left: 40px;
+				font: 20px;
+				float: left;
+			}
+			.text1{
+				width: 137px;
+				height: 20px;
+				background-color: lightgray;
+				border:0px ;
+				outline: none;
+				overflow: hidden;
+			}
+			.sogo{
+				width: 110px;
+				height: 30px;
+				background-color: dodgerblue;
+				font-size: 20px;
+				color: white;
+				float: left;
+				margin: 0px  0px 0px 90px;
+				padding: 5px 0px 5px 20px;
+				border-radius: 20px;
+			}
+			a.sogo1{color: white;}
+			.hr{width: 30px;
+			size: 5px;
+			border-color: cornflowerblue;
+			border-style: solid; }
+			a{
+				
+				color: #00BFFF;
+				text-decoration: none;
+			}
+			hr{
+				border-color: cornflowerblue;
+				
+			}
+			a.newsbigger{
+				color: black;
+				text-decoration: none;
+				font-size:20px;
+				text-align: center;
+			}
+			a.newsbigger:hover{
+				color: #00BFFF;
+				text-decoration: none;
+				font-size:20px;
+				text-align: center;
+			}
+			a.news{
+				color: black;
+				text-decoration: none;
+				font-size:15px;
+				text-align: center;
+			}
+			a.news:hover{
+				color: cornflowerblue;
+				text-decoration: none;
+				font-size:15px;
+				text-align: center;
+			}
+			a.lei{
+				color: black;
+				text-decoration: none;
+				font-size:15px;
+			}
+		.op{
+			widows: 5px;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div class="bigbox">
+			<div class="longbox1">
+				<div class="lb21">
+					<a href="http://www.xtu.etu.cn/">
+						<img src="img/校徽2 (2).jpg" width="100px" height="100px" />
+					</a>
+				</div>
+				<div class="serachboder"><div class="search1"><a href="#" class="lei" >网页
+				</a>
+				<!--<select>
+					<option value="1" class="op"></option>
+					<option value="1" class="op">新闻</option>
+					<option value="1" class="op">地图</option>
+					<option value="1" class="op">问问</option>
+				</select>	-->
+				</div>
+				<div class="wyd">
+					<a class="wy" href="#"></a>
+					
+				</div><div class="search2"><input type="text" class="text1"  /></div>
+				<div class="sogo">
+					<a href="https://www.sogou.com/" class="sogo1">搜狗搜索</a>
+				</div></div>
+				<div class="qq">
+					<a class="qqkj" href="#"> </a>
+					
+				</div>
+				<div class="qq">
+					<a class="xx" href="#"></a>
+				</div>
+				<div><button class="bn" onclick="window.location.href('2.html')" value="submit"><a href="#">登录</a></button></div>
+			</div>
+			<div class="longbox2">
+				<ul>
+					<li>
+						<a href="http://60.xtu.edu.cn/template2/home/index" target="_blank">校庆</a>
+					</li>
+					<li>
+						<a href="http://202.197.224.171/zfca/login?service=http%3A%2F%2F202.197.224.171%2Fportal.do" target="_blank">门户</a>
+					</li>
+					<li>
+						<a href="http://nic.xtu.edu.cn/" target="_blank">网服</a>
+					</li>
+					<li>
+						<a href="https://baike.baidu.com/item/湘潭大学/245799?fr=aladdin" target="_blank">百科</a>
+					</li>
+					<li>
+						<a href="https://weibo.com/u/5725856399?is_hot=1" target="_blank">微博</a>
+					</li>
+					<li>
+						<a href="https://www.sky31.com/" target="_blank">三翼</a>
+					</li>
+					<li>
+						<a href="http://fuwu.xtu.edu.cn/web/index.jsp" target="_blank">阳光服务</a>
+					</li>
+					<li>
+						<a href="http://zp.xtu.edu.cn/" target="_blank">招聘</a>
+					</li>
+					<li>
+						<a href="http://zwxxg.xtu.edu.cn/" target="_blank">政务信息港</a>
+					</li>
+					<li class="dropdown">
+						<a href="#">更多</a>
+						<ul class="hl">
+							<li class="dropdown">
+								<a href="http://xxgk.xtu.edu.cn/" class="dropdown" title="更多">信息公开</a>
+							</li>
+							<li class="dropdown">
+								<a href="http://lib.xtu.edu.cn/" class="dropdown"title="更多">图书馆</a>
+							</li>
+							<li class="dropdown">
+								<a herf="http://fund.xtu.edu.cn/" class="dropdown"title="更多">教育基金会</a>
+							</li>
+							<li class="dropdown">
+								<a href="http://www.xtu.edu.cn/xysh/xyfg/3dxy/" class="dropdown"title="更多">实景</a>
+							</li>
+							<li class="dropdown">
+								<a href="http://202.197.224.59/exam/index.php/exam/current" class="dropdown"title="更多">c语言</a>
+							</li>
+							<li class="dropdown"><a href="#">精神</a></li>
+							<li class="dropdown"><a href="#">文明</a></li>
+							<li class="dropdown"><a href="#">运动</a></li>
+							<li class="dropdown"><a href="#">教育</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+			<div class="longbox3">
+				<div class="longbox3a"><a href="#"><img src="img/广告3.jpg"width="600px"height="90px"/></a></div>
+				<div class="longbox3b"><a href="#"><img src="img/广告2.jpg"width="300px"height="90px"/></a></div>
+			</div>
+			<div class="bigbox2">
+				<div class="y1box"><div class="y1abox"><a href="#">要闻</a><hr class="hr"><hr></div>
+				<div class="y1bbox"><a href="http://news.xtu.edu.cn/html/meitixd/show_11136.html"target="_blank"class="newsbigger">努力办好人民满意的教育</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/zonghexw/show_11166.html"target="_blank"class="news">我校思想政治理论课强化“红色”实践教学</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/zonghexw/show_11156.html"target="_blank"class="news">校长周益春专题调研碧泉书院建设发展情况</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/zonghexw/show_11155.html"target="_blank"class="news">第三十八届学生田径运动会举行</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/meitigz/show_10659.html"target="_blank"class="news">我省首场高校征兵宣讲报告会在湘潭大学举行</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/meitigz/show_10293.html"target="_blank"class="news">学界新声：从大学办学院向学院办大学转变</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/xiaoyuansh/show_10961.html"target="_blank"class="news">后勤保障处全力做好暑期后勤保障服务工作</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/meitixd/show_9210.html"target="_blank"class="news">湘潭大学暑期“三下乡”工作获团中央表彰</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/zonghexw/show_9044.html"target="_blank"class="news">校长黄云清在2016年暑期研讨会上的讲话</a></div>
+				
+				
+				</div>
+				<div class="y2box">
+				<div class="y1abox">
+				<a href="#">今日话题</a><hr class="hr"><hr>	
+				</div>	
+				<div class="y1bbox"><a href="http://news.xtu.edu.cn/html/ztxw_fx40/show_6751.html"target="_blank"class="newsbigger">谈湘大精神与湘大校风</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/xiaoyuansh/show_5830.html"target="_blank"class="news">我校研究生举办活动纪念毛泽东诞辰119周年</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/zonghexw/show_11149.html"target="_blank"class="news">我校举办基层党建工作实务专题培训</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/zonghexw/show_11139.html"target="_blank"class="news">我校召开学位授权点建设工作推进会</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/meitixd/show_8615.html"target="_blank"class="news">【湖南日报】情牵小康三“山”有梦</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/meitixd/show_11092.html"target="_blank"class="news">举旗帜 聚民心 育新人 兴文化 展形象</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/meitixd/show_11128.html"target="_blank"class="news">黑发积霜织日月 粉笔无言写春秋</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/meitixd/show_11106.html"target="_blank"class="news">黎锦明与湘潭大学</a></div>
+				<div class="y1bcox"><a href="http://news.xtu.edu.cn/html/meitixd/show_11157.html"target="_blank"class="news">湖南省本科院校“双一流”建设项目名单公布</a></div>
+				</div>
+				<div class="y3box"><div class="y3abox">
+					<ul class="b3">
+						<li><a href="" class="b3">新闻APP</a></li>
+						<li><a href="">体育APP</a></li>
+						<li><a href="">企鹅号</a></li>
+						<li><a href="">快报</a></li>
+						<li><a href="">视频</a></li>
+						<li><a href="">浏览器</a></li>
+						<li><a href="">微视</a></li>
+						
+					</ul>
+					<ul class="b6">
+						<li><a href="#" class="sj"></a></li>
+						</ul>
+				</div><div class="y3bbox">
+					<ul class="b4">
+						<li></li>
+						<li><a href="" class="b4">微信</a></li>
+						<li><a href="">QQ</a></li>
+						<li><a href="">空间</a></li>
+						<li><a href="">企业微信</a></li>
+						<li><a href="">邮箱</a></li>
+						<li><a href="">腾讯云</a></li>
+						<li><a href="">电脑管家</a></li>
+						<li><a href="">会员</a></li>
+						
+					</ul>
+					<ul class="b6">
+						<li><a href="#" class="xing"></a></li>
+						</ul>
+				</div><div class="y3abox">
+					<ul class="b5">
+						<li><a href="" class="b5">LOL</a></li>
+						<li><a href="">DNF</a></li>
+						<li><a href="">CF</a></li>
+						<li><a href="">王者</a></li>
+						<li><a href="">逆战</a></li>
+						<li><a href="">火影OL</a></li>
+						<li><a href="">天刀</a></li>
+						<li><a href="">爱玩</a></li>
+						<li><a href="">冒险岛2</a></li>
+						
+					</ul>
+					<ul class="b6">
+						<li><a href="#" class="youxi"></a></li>
+						</ul>
+				</div><div class="y3bbox">
+					<ul class="b4">
+						<li><a href="#" class="b4">软件</a></li>
+						<li><a href="">Q币</a></li>
+						<li><a href="">京东</a></li>
+						<li><a href="">腾讯地图</a></li>
+						<li><a href="">腾讯文档</a></li>
+						<li><a href="">理财通</a></li>
+						<li><a href="#" class="b6">全部</a></li>
+						
+						</ul>
+						<ul class="b6">
+						<li><a href="#" class="cabei"></a></li>
+						</ul>
+                 </div>
+                 <div class="y3cbox"><a href="">热门赛事</a><hr class="hr"><hr></div>
+                 <div class="y3dbox"><a href="#"><img src="img/NBA.jpg"width="300px"></a></div>
+				</div>
+			</div>
+
+			<div></div>
+		</div>
+	</body>
+
+</html>

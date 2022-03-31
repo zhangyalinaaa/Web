@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+				* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				width: 960px;
+				margin: 0 auto;
+			}
+			
+			ul {
+				background-color: saddlebrown;
+			}
+			
+			li {
+				display: inline-block;
+				text-decoration: none;
+				margin: 14px;
+			}
+			
+			li a:hover {
+				background-color: chocolate;
+			}
+			
+			a {
+				text-decoration: none;
+				font-size: 16px;
+				color: antiquewhite;
+			}
+			
+			a:hover {
+				color: #FAEBD7;
+			}
+			
+			.span1 {
+				position: relative;
+				top: -30px;
+				left: 200px;
+			}
+			
+			.span2 {
+				font-size: 25px;
+				color: #8B4513;
+				position: relative;
+				top: -20px;
+				left: 10px;
+				background-color: #FAEBD7;
+			}
+			
+			.sosuo {
+				height: 30px;
+				width: 200px;
+				border-radius: 20px;
+				padding-left: 10px;
+				position: relative;
+				top: -20px;
+				left: 6px;
+				border: 1px burlywood solid;
+				background-color: #FAEBD7;
+			}
+			
+			.bigbox {
+				width: 960px;
+				border: 1px bisque solid;
+				float: left;
+			}
+			
+			.div1 {
+				width: 960px;
+				border: 1px bisque solid;
+				float: left;
+			}
+			
+			.divlong {
+				width: 960px;
+				border: 1px bisque solid;
+				float: left;
+			}
+			
+			.show1 {
+				width: 300px;
+				height: 300px;
+				border: 1px bisque solid;
+				margin-left: 25px;
+				float: left;
+			}
+			.show2 {
+				width: 400px;
+				height: 300px;
+				border: 1px bisque solid;
+				float: left;
+			}
+			.zi1{
+				width: 200px;
+				height: 300px;
+				border: 1px bisque solid;
+				float: left;
+			}
+			.zi3{
+					position: relative;
+					top: 10px;
+					left: 80px;
+					width: 60px;
+					}
+			.prev,
+			.next {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				width: auto;
+				margin-top: -22px;
+				padding: 16px;
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+				transition: 0.6s ease;
+				border-radius: 0 3px 3px 0;
+			}
+			
+			.next {
+				right: 0;
+				border-radius: 3px 0 0 3px;
+			}
+			/* On hover, add a black background color with a little bit see-through */
+			
+			.prev:hover,
+			.next:hover {
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+			
+			.dot {
+				cursor: pointer;
+				height: 13px;
+				width: 13px;
+				margin: 0 2px;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+				transition: background-color 0.6s ease;
+			}
+			
+			.active,
+			.dot:hover {
+				background-color: #717171;
+			}
+			
+			.fade {
+				-webkit-animation-name: fade;
+				-webkit-animation-duration: 1.5s;
+				animation-name: fade;
+				animation-duration: 1.5s;
+			}
+			
+			@-webkit-keyframes fade {
+				from {
+					opacity: .4
+				}
+				to {
+					opacity: 1
+				}
+			}
+			
+			@keyframes fade {
+				from {
+					opacity: .4
+				}
+				to {
+					opacity: 1
+				}
+				
+		</style>
+
+	</head>
+
+	<body>
+		<div class="bigbox">
+			<div class="div1">
+				<a href="#"><img src="img/字体一.png" width="200px"></a>
+				<a href="#"><img src="img/屋1.png" width="100px" /></a>
+				<input type="text" class="sosuo" /> <button class="span2">搜索</button>
+				<span class="span1">项目负责人：张亚林 </span>
+				<span>项目名称：古代建筑模型</span>
+			</div>
+			<div class="divlong">
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#">主页</a>
+					</li>
+					<li>
+						<a href="ge2.html">商殷周到春秋战国&&秦汉到三国&&晋魏六朝&&隋唐到五代&&辽宋到金元&&明清两朝</a>
+					</li>
+					
+					<li>
+						<a href="ge3.html">DIY课堂</a>
+					</li>
+				</ul>
+			</div>
+			<div class="show1">
+				<div class="mySlides fade">
+
+					<img src="img/古建筑3.jpg" style="width:300px; height: 250px;">
+
+				</div>
+
+				<div class="mySlides fade">
+
+					<img src="img/古亭.jpg" style="width:300px;  height: 250px;">
+
+				</div>
+
+				<div class="mySlides fade">
+
+					<img src="img/故宫.jpg" style="width:300px; height: 250px;">
+
+				</div>
+				<div class="mySlides fade">
+
+					<img src="img/茅草屋.jpg" style="width:300px; height: 250px;">
+
+				</div>
+				
+				<div style="text-align:center">
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>
+				<br>
+			</div>
+			<div class="zi1"><img src="img/zi2.png " width="50px"/>
+			<img src="img/zi3.png" width="50px" class="zi3"/></div>
+			<div class="show2">
+				<div class="mySlides2 fade">
+
+					<img src="img/gsqt.jpg" style="width:400px; height: 250px;">
+
+				</div>
+
+				<div class="mySlides2 fade">
+
+					<img src="img/gsqt2.jpg" style="width:400px;  height: 250px;">
+
+				</div>
+
+				<div class="mySlides2 fade">
+
+					<img src="img/手工二.jpg" style="width:400px; height: 250px;">
+
+				</div>
+				<div class="mySlides2 fade">
+
+					<img src="img/背景.jpg" style="width:400px; height: 250px;" >
+
+				</div>
+				
+				<div style="text-align:center">
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>
+			</div>
+			<
+		</div>
+
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				for(i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if(slideIndex > slides.length) {
+					slideIndex = 1
+				}
+				for(i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " active";
+				setTimeout(showSlides, 2000); // 切换时间为 2 秒
+			}
+			var slideIndex = 0;
+			showSlides2();
+			function showSlides2() {
+				var i;
+				var slides = document.getElementsByClassName("mySlides2");
+				var dots = document.getElementsByClassName("dot");
+				for(i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if(slideIndex > slides.length) {
+					slideIndex = 1
+				}
+				for(i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " active";
+				setTimeout(showSlides2, 2000); // 切换时间为 2 秒
+			}
+		</script>
+	</body>
+
+</html>
